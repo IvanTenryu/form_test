@@ -16,23 +16,28 @@
       <div class="form" id="form">
         <form class="fields">
           <label for="fecha-hora">Fecha </label>
-          <input name="fecha-hora" id="fecha-hora" type="datetime-local" value="">
+          <input name="fecha-hora" id="fecha-hora" type="datetime-local" required >
           <br></br>
           <label class="titulo-seccion">Domicilio del incidente</label>
           <br></br>
           <label for="calle">Calle </label>
-          <input type="text" name="calle" class="domicilio" id="calle" placeholder="calle">
-          <label for="numero-ext">Número ext </label>
-          <input type="number" name="numero-ext" class="domicilio" id="numero-ext" placeholder="Número exterior">
+          <input type="text" name="calle" class="domicilio" id="calle" placeholder="Calle" required >
+          <br></br>
+          <label for="numero">Número </label>
+          <input type="number" name="numero" class="domicilio" id="numero" placeholder="Exterior" required >
+          <label for="numero-int"></label>
+          <input type="number" name="numero-int" class="domicilio" id="numero-int" placeholder="Interior" required >
           <br></br>
           <label for="colonia">Colonia </label>
-          <input type="text" name="colonia" class="domicilio" id="colonia" placeholder="Colonia">
+          <input type="text" name="colonia" class="domicilio" id="colonia" placeholder="Colonia" required >
           <label for="municipio">Municipio </label>
-          <input type="text" name="municipio" class="domicilio" id="municipio" placeholder="Municipio">
+          <input type="text" name="municipio" class="domicilio" id="municipio" placeholder="Municipio" required >
           <br></br>
           <label for="coordinates">Coordenadas  </label>
-          <input type="text" name="coordinates" class="coordinates" id="latitude" placeholder="Latitud">
-          <input type="text" name="coordinates" class="coordinates" id="longitude" placeholder="Longitud">
+          <input type="text" name="coordinates" class="coordinates" id="latitude" placeholder="Latitud" required >
+          <input type="text" name="coordinates" class="coordinates" id="longitude" placeholder="Longitud" required >
+          <br></br>
+          <input class="btn btn-light" type="submit" value="Guardar">
         </form>
       </div>
     </div>
