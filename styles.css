@@ -7,6 +7,10 @@ html{
   width: 100vw;
 }
 
+.titulo-seccion {
+  font-size: x-large;
+}
+
 .form {
   padding: 50px;
   position: absolute;
