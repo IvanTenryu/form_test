@@ -1,27 +1,19 @@
+/* Opciones de localización y zoom para el mapa */
 let mapOptions = {
   center: [19.10, -104.10],
   zoom: 10
 };
 
+/* Construir el objeto mapa */
 let map = new L.map('map', mapOptions);
 
 let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 map.addLayer(layer);
 
+/* Cambiar el cursor sobre el mapa a una cruz */
 L.DomUtil.addClass(map._container,'crosshair-cursor-enabled');
 
-/*
-var popup = L.popup();
-function onMapClick(e) {
-  popup
-    .setLatLng(e.latlng)
-    .setContent("Coordenadas: " + e.latlng.toString())
-    .openOn(map);
-}
-
-map.on('click', onMapClick);
-*/
-
+/* Para extraer las coordenadas separadas en Longitud y Latitud */
 let marker = null;
 map.on('click', (event)=> {
 
