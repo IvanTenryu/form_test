@@ -12,7 +12,7 @@ html{
 }
 
 .form {
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,6 +44,10 @@ form label {
 
 .leaflet-container.crosshair-cursor-enabled {
   cursor: crosshair;
+}
+
+.coordinates {
+  margin-left: 30px;
 }
 
 form input{
